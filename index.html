@@ -19,6 +19,10 @@
         height: 3000px;
         background-color: lightcoral;
         border: 1px solid black;
+        /* move span tag down 10px from original position */
+        position: relative;
+        top: 10px;
+        left: 10px;
       }
 
       .inline-block {
@@ -27,6 +31,24 @@
         border: 1px solid black;
         width: 200px;
         height: 50px;
+      }
+
+      .relative {
+        position: relative;
+        width: 500px;
+        height: 350px;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+
+      .absolute {
+        background-color: lightcoral;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
       }
     </style>
   </head>
@@ -62,5 +84,15 @@
       Float can be used to move elements to the left or right of the page and
       allow text to wrap around it.
     </p>
+
+    <div class="relative">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure mollitia
+      modi totam ratione consequuntur exercitationem fugit. Optio rem est ipsa
+      earum ipsum! Beatae, sint ipsa esse iure qui dolorum expedita.
+      <div class="absolute">
+        This is the absolute div. It is positioned relative to the nearest
+        parent element that has a position property other than static.
+      </div>
+    </div>
   </body>
 </html>
