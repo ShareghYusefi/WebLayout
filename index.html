@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Layout</title>
+    <style>
+      .block {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+
+      .inline {
+        display: inline;
+        width: 3000px;
+        height: 3000px;
+        background-color: lightcoral;
+        border: 1px solid black;
+      }
+
+      .inline-block {
+        display: inline-block;
+        background-color: lightgreen;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Layout</h1>
+
+    <p>
+      Tranditional flow of HTML elements are to be be stacked on top of each
+      other.
+      <span class="block"
+        >These Types of elements are known as <strong>block</strong> elements
+        and they start on a new line while taking up the full width
+        available.</span
+      >
+    </p>
+
+    <p>
+      <strong>Inline</strong> elements are those that do not start on a new line
+      and only take up as much width as necessary. A good example of this is the
+      <span class="inline">span tag.</span> This tag will not take up specified
+      width or height values.
+    </p>
+
+    <p>
+      <strong>Inline-block</strong> elements are those that flow flow with text
+      and do NOT start on a new line. They also
+      <span class="inline-block"
+        >maintian their size and shape like block elements.</span
+      >
+    </p>
+
+    <p>
+      Float can be used to move elements to the left or right of the page and
+      allow text to wrap around it.
+    </p>
+  </body>
+</html>
